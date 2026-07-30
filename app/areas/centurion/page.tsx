@@ -8,7 +8,7 @@ import { CheckCircle, ArrowRight, Phone, Star, Award, Building2, MapPin, Clock, 
 
 export const metadata: Metadata = {
   title:
-    "Best Carpenter & Plumber Centurion 2024 | Kitchen Renovations, Built-in Cupboards & Modern Plumbing | Free Quotes",
+    "Best Carpenter & Plumber Centurion 2026 | Kitchen Renovations, Built-in Cupboards & Modern Plumbing | Free Quotes",
   description:
     "★★★★★ #1 Rated Carpenter & Plumber in Centurion. Expert kitchen renovations, modern built-in cupboards, granite installation & smart plumbing systems. Serving Irene, Highveld, Lyttelton. Licensed & insured. Free quotes. Call 067 601 4490",
   keywords:
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     canonical: "https://granitecarpentry.co.za/areas/centurion",
   },
   openGraph: {
-    title: "Best Carpenter & Plumber Centurion 2024 | Kitchen Renovations & Built-in Cupboards",
+    title: "Best Carpenter & Plumber Centurion 2026 | Kitchen Renovations & Built-in Cupboards",
     description:
       "★★★★★ #1 Rated Carpenter & Plumber in Centurion. Expert kitchen renovations, granite installation & smart plumbing systems. Free quotes. Call 067 601 4490",
     url: "https://granitecarpentry.co.za/areas/centurion",
@@ -362,6 +362,56 @@ export default function CenturionPage() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-16 bg-slate-50">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
+              Centurion Carpentry & Plumbing FAQs
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Answers to the questions Centurion homeowners ask us most in 2026
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            {[
+              {
+                q: "How quickly can you provide a quote in Centurion?",
+                a: "We offer same-day quotes across all Centurion areas including Irene, Highveld, and Lyttelton. Most free quotes are delivered within 24 hours of your call.",
+              },
+              {
+                q: "Are you licensed and insured?",
+                a: "Yes. We are a fully licensed carpenter and plumber with comprehensive insurance, so your home and project are always protected.",
+              },
+              {
+                q: "Do you offer a warranty on your work?",
+                a: "Absolutely. Every carpentry and plumbing job we complete in Centurion comes with a comprehensive 5-year workmanship warranty.",
+              },
+              {
+                q: "What does a kitchen renovation cost in Centurion?",
+                a: "Kitchen renovations start from R20,000 depending on layout, materials, and finishes. We provide a detailed, transparent quote before any work begins.",
+              },
+              {
+                q: "Do you handle plumbing emergencies?",
+                a: "Yes, we provide emergency plumbing repairs throughout Centurion with fast response times and upfront hourly pricing from R370/hour.",
+              },
+              {
+                q: "Which Centurion areas do you serve?",
+                a: "We serve all of Centurion including the CBD, Irene, Highveld, Lyttelton, Wierdapark, Eldoraigne, Doringkloof, Clubview, and surrounding suburbs.",
+              },
+            ].map((faq) => (
+              <Card key={faq.q} className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h3 className="font-semibold text-slate-800 text-lg mb-2">{faq.q}</h3>
+                  <p className="text-slate-600 leading-relaxed">{faq.a}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Contact CTA Section */}
       <section className="py-16 bg-gradient-to-r from-amber-600 to-amber-700 text-white">
         <div className="container mx-auto text-center">
@@ -395,9 +445,14 @@ export default function CenturionPage() {
             </Button>
           </div>
 
-          <div className="mt-8 text-center">
-            <p className="text-lg opacity-90">
-              ⭐⭐⭐⭐⭐ "Excellent modern kitchen renovation and plumbing service! Professional team." - Lisa K., Irene
+          <div className="mt-8 flex flex-col items-center gap-2">
+            <div className="flex items-center gap-1">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-5 h-5 fill-current text-white" />
+              ))}
+            </div>
+            <p className="text-lg opacity-90 max-w-2xl text-pretty">
+              {'"Excellent modern kitchen renovation and plumbing service! Professional team."'} - Lisa K., Irene
             </p>
           </div>
         </div>
