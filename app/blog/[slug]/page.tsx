@@ -1268,7 +1268,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                           Planning Your Renovation
                         </a>
                         <a href="#trends" className="block text-sm text-slate-600 hover:text-amber-600">
-                          2024 Design Trends
+                          2026 Design Trends
                         </a>
                         <a href="#timeline" className="block text-sm text-slate-600 hover:text-amber-600">
                           Timeline & Process

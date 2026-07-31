@@ -195,7 +195,7 @@ export default function HomePage() {
       icon: <Award className="h-8 w-8 text-amber-600" />,
       title: "5-Star Rated Service",
       description:
-        "Consistently rated 5 stars across Google Reviews with 47+ successful projects completed in 2024-2025",
+        "Consistently rated 5 stars across Google Reviews with 47+ successful projects completed in 2025-2026",
     },
     {
       icon: <Shield className="h-8 w-8 text-amber-600" />,
@@ -249,7 +249,7 @@ export default function HomePage() {
                   <span className="ml-2 font-semibold">5.0 Google Rating</span>
                 </div>
                 <Separator orientation="vertical" className="h-6 bg-slate-600 hidden sm:block" />
-                <span className="font-semibold">50+ Projects (2024-2025)</span>
+                <span className="font-semibold">50+ Projects (2025-2026)</span>
                 <Separator orientation="vertical" className="h-6 bg-slate-600 hidden sm:block" />
                 <span className="font-semibold">24/7 Emergency Response</span>
               </div>
@@ -871,7 +871,7 @@ export default function HomePage() {
               Gauteng's Most Trusted Home Service Experts Since 2020
             </h2>
             <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-              With 50+ successfully completed projects in 2024-2025 and a flawless 5.0-star Google rating, we're the
+              With 50+ successfully completed projects in 2025-2026 and a flawless 5.0-star Google rating, we're the
               preferred choice for discerning homeowners and businesses across Johannesburg, Sandton, Pretoria, and
               Gauteng for carpentry, plumbing, and professional installations.
             </p>
