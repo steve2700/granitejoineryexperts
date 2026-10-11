@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: "Granite Carpentry",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        url: "https://granitecarpentry.co.za/og-image.png",
         width: 1200,
         height: 630,
         alt: "River City Carpenter & Plumber Vereeniging - Granite Carpentry",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "River City Carpenter & Plumber Vereeniging | Traditional Kitchen Renovations & Reliable Plumbing",
     description:
       "River city carpenter & plumber services in Vereeniging. Traditional kitchen renovations, built-in cupboards, granite installation & reliable plumbing. Licensed & insured for Vaal Triangle living.",
-    images: ["https://granitecarpentry.co.za/granitecarpentry-logo.png"],
+    images: ["https://granitecarpentry.co.za/og-image.png"],
   },
   alternates: {
     canonical: "https://granitecarpentry.co.za/areas/vereeniging",

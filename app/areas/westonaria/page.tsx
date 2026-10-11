@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "Granite Carpentry",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        url: "https://granitecarpentry.co.za/og-image.png",
         width: 1200,
         height: 630,
         alt: "West Rand Carpenter & Plumber Westonaria - Granite Carpentry",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "West Rand Carpenter & Plumber Westonaria | Mining Carpentry & Heavy-Duty Plumbing",
     description:
       "West Rand carpenter & plumber services in Westonaria. Mining carpentry, kitchen renovations, built-in cupboards, granite installation & heavy-duty plumbing. Licensed & insured for mining town living.",
-    images: ["https://granitecarpentry.co.za/granitecarpentry-logo.png"],
+    images: ["https://granitecarpentry.co.za/og-image.png"],
   },
   alternates: {
     canonical: "https://granitecarpentry.co.za/areas/westonaria",

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "Granite Carpentry",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        url: "https://granitecarpentry.co.za/og-image.png",
         width: 1200,
         height: 630,
         alt: "Industrial Carpenter Germiston - Granite Carpentry",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "Industrial Carpenter Germiston | Commercial Carpentry & Granite Installation",
     description:
       "Industrial carpenter services in Germiston. Commercial carpentry, kitchen renovations, built-in cupboards, granite installation. Licensed & insured.",
-    images: ["https://granitecarpentry.co.za/granitecarpentry-logo.png"],
+    images: ["https://granitecarpentry.co.za/og-image.png"],
   },
   alternates: {
     canonical: "https://granitecarpentry.co.za/areas/germiston",

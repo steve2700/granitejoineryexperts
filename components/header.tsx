@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { ScrollArea } from "@/components/ui/scroll-area"
@@ -128,9 +129,14 @@ export function Header() {
           {/* Logo - Optimized for mobile */}
           <div className="flex items-center min-w-0 flex-1">
             <Link href="/" className="flex items-center space-x-2 min-w-0">
-              <div className="h-8 w-8 sm:h-10 sm:w-10 rounded bg-amber-600 flex items-center justify-center flex-shrink-0">
-                <span className="text-white font-bold text-sm sm:text-base">GC</span>
-              </div>
+              <Image
+                src="/logo-mark.png"
+                alt="Granite Carpentry logo"
+                width={992}
+                height={820}
+                priority
+                className="h-9 w-auto sm:h-11 flex-shrink-0"
+              />
               <div className="min-w-0 flex-1">
                 <div className="font-bold text-base sm:text-lg text-slate-900 truncate">Granite Carpentry</div>
                 <div className="text-xs text-slate-600 hidden sm:block">& Joinery Experts</div>
@@ -254,9 +260,13 @@ export function Header() {
                   {/* Header */}
                   <div className="flex items-center justify-between p-4 sm:p-6 border-b bg-slate-50">
                     <Link href="/" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
-                      <div className="h-8 w-8 rounded bg-amber-600 flex items-center justify-center">
-                        <span className="text-white font-bold text-sm">GC</span>
-                      </div>
+                      <Image
+                        src="/logo-mark.png"
+                        alt="Granite Carpentry logo"
+                        width={992}
+                        height={820}
+                        className="h-9 w-auto"
+                      />
                       <div>
                         <div className="font-bold text-base text-slate-900">Granite Carpentry</div>
                         <div className="text-xs text-slate-600">& Joinery Experts</div>

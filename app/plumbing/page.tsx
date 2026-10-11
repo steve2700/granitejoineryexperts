@@ -196,7 +196,7 @@ export default function PlumbingPage() {
     provider: {
       "@type": "LocalBusiness",
       name: "Granite Carpentry & Joinery Experts",
-      image: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+      image: "https://granitecarpentry.co.za/og-image.png",
       telephone: "+27676014490",
       email: "info@granitecarpentry.co.za",
       address: {

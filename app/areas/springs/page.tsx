@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "Granite Carpentry",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        url: "https://granitecarpentry.co.za/og-image.png",
         width: 1200,
         height: 630,
         alt: "Efficient Carpenter & Plumber Springs - Granite Carpentry",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "Efficient Carpenter & Plumber Springs | Fast Kitchen Renovations & Built-in Cupboards",
     description:
       "Efficient carpenter & plumber services in Springs. Fast kitchen renovations, built-in cupboards, granite installation & emergency plumbing. Licensed & insured with quick turnaround.",
-    images: ["https://granitecarpentry.co.za/granitecarpentry-logo.png"],
+    images: ["https://granitecarpentry.co.za/og-image.png"],
   },
   alternates: {
     canonical: "https://granitecarpentry.co.za/areas/springs",

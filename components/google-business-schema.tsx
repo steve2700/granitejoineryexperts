@@ -10,12 +10,12 @@ export function GoogleBusinessSchema() {
     url: "https://granitecarpentry.co.za",
     logo: {
       "@type": "ImageObject",
-      url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
-      width: 400,
-      height: 400,
+      url: "https://granitecarpentry.co.za/logo.png",
+      width: 1024,
+      height: 1024,
     },
     image: [
-      "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+      "https://granitecarpentry.co.za/logo.png",
       "https://granitecarpentry.co.za/Kitchen-renovations-sandton.webp",
       "https://granitecarpentry.co.za/granite-installation-Johannesburg.jpg",
       "https://granitecarpentry.co.za/Built-Built-in-Cupboards-Midrand.jpg",
@@ -198,9 +198,9 @@ export function GoogleBusinessSchema() {
     url: "https://granitecarpentry.co.za",
     logo: {
       "@type": "ImageObject",
-      url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
-      width: 400,
-      height: 400,
+      url: "https://granitecarpentry.co.za/logo.png",
+      width: 1024,
+      height: 1024,
     },
     contactPoint: {
       "@type": "ContactPoint",

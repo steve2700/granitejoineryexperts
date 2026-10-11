@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: "Granite Carpentry",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        url: "https://granitecarpentry.co.za/og-image.png",
         width: 1200,
         height: 630,
         alt: "Mining Town Carpenter Carletonville - Granite Carpentry",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "Mining Town Carpenter & Plumber Carletonville | Heavy-Duty Carpentry & Granite Installation",
     description:
       "Mining town carpenter services in Carletonville. Heavy-duty carpentry, kitchen renovations, built-in cupboards, granite installation. Licensed & insured for mining communities.",
-    images: ["https://granitecarpentry.co.za/granitecarpentry-logo.png"],
+    images: ["https://granitecarpentry.co.za/og-image.png"],
   },
   alternates: {
     canonical: "https://granitecarpentry.co.za/areas/carletonville",

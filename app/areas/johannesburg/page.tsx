@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: "Granite Carpentry",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        url: "https://granitecarpentry.co.za/og-image.png",
         width: 1200,
         height: 630,
         alt: "City Carpenter & Plumber Johannesburg - Granite Carpentry",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "City Carpenter & Plumber Johannesburg | Premium Kitchen Renovations & Professional Plumbing",
     description:
       "City carpenter & plumber services in Johannesburg CBD & Central. Premium kitchen renovations, built-in cupboards, granite installation & professional plumbing. Licensed & insured for city living.",
-    images: ["https://granitecarpentry.co.za/granitecarpentry-logo.png"],
+    images: ["https://granitecarpentry.co.za/og-image.png"],
   },
   alternates: {
     canonical: "https://granitecarpentry.co.za/areas/johannesburg",

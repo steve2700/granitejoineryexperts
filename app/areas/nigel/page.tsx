@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "Granite Carpentry",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        url: "https://granitecarpentry.co.za/og-image.png",
         width: 1200,
         height: 630,
         alt: "Country Carpenter & Plumber Nigel - Granite Carpentry",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "Country Carpenter & Plumber Nigel | Rural Carpentry & Granite Installation",
     description:
       "Country carpenter & plumber services in Nigel. Rural carpentry, kitchen renovations, built-in cupboards, granite installation & country plumbing. Licensed & insured with country service.",
-    images: ["https://granitecarpentry.co.za/granitecarpentry-logo.png"],
+    images: ["https://granitecarpentry.co.za/og-image.png"],
   },
   alternates: {
     canonical: "https://granitecarpentry.co.za/areas/nigel",

@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin, Star, Award, Shield, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -128,8 +129,14 @@ export function Footer() {
           <div className="space-y-6">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="h-8 w-8 rounded bg-amber-600 flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">GC</span>
+                <div className="rounded-lg bg-[#fcf8ed] p-1.5 flex-shrink-0">
+                  <Image
+                    src="/logo-mark.png"
+                    alt="Granite Carpentry logo"
+                    width={992}
+                    height={820}
+                    className="h-9 w-auto"
+                  />
                 </div>
                 <div>
                   <div className="font-bold text-lg text-amber-400">Granite Carpentry</div>

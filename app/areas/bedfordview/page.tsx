@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: "Granite Carpentry",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        url: "https://granitecarpentry.co.za/og-image.png",
         width: 1200,
         height: 630,
         alt: "Best Carpenter Bedfordview - Kitchen Renovation & Built-in Cupboards",
@@ -42,7 +42,7 @@ const schemaMarkup = {
       "@type": "LocalBusiness",
       "@id": "https://granitecarpentry.co.za/#localbusiness-bedfordview",
       "name": "Granite Carpentry - Bedfordview Carpenter & Plumber",
-      "image": "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+      "image": "https://granitecarpentry.co.za/og-image.png",
       "telephone": "+27676014490",
       "priceRange": "R450-R85000",
       "address": {

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "Granite Carpentry",
     images: [
       {
-        url: "https://granitecarpentry.co.za/granitecarpentry-logo.png",
+        url: "https://granitecarpentry.co.za/og-image.png",
         width: 1200,
         height: 630,
         alt: "Professional Carpenter & Plumber Benoni - Granite Carpentry",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "Professional Carpenter & Plumber Benoni | Kitchen Renovations & Built-in Cupboards",
     description:
       "Professional carpenter & plumber services in Benoni. Kitchen renovations, built-in cupboards, granite installation & emergency plumbing. Licensed & insured with 24-month warranty.",
-    images: ["https://granitecarpentry.co.za/granitecarpentry-logo.png"],
+    images: ["https://granitecarpentry.co.za/og-image.png"],
   },
   alternates: {
     canonical: "https://granitecarpentry.co.za/areas/benoni",
