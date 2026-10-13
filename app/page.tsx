@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import { Phone, Star, CheckCircle, Clock, Shield, Award, Users, MapPin, ArrowRight, Quote } from "lucide-react"
+import { Phone, Star, CheckCircle, Clock, Shield, Award, Users, MapPin, ArrowRight, Quote, Zap } from "lucide-react"
 
 export default function HomePage() {
   const services = [
@@ -239,6 +239,38 @@ export default function HomePage() {
                   installations - we deliver exceptional craftsmanship backed by 5-star reviews and a 24-month warranty
                   guarantee across all Gauteng areas.
                 </p>
+              </div>
+
+              {/* Instant quotes: powered by Yebo Invoices */}
+              <div className="rounded-xl border border-amber-500/40 bg-white/10 p-4 backdrop-blur-sm sm:p-5">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-amber-600">
+                    <Zap className="h-6 w-6 text-white" aria-hidden="true" />
+                  </div>
+                  <div className="min-w-0">
+                    <p className="text-lg font-bold text-white sm:text-xl">Instant quotes. No more waiting days.</p>
+                    <p className="mt-1 text-sm leading-relaxed text-slate-200 sm:text-base">
+                      We use Yebo Invoices to prepare and send quotes fast, straight to your WhatsApp or email, so you
+                      can compare prices and decide while your project is still fresh in your mind.
+                    </p>
+                    <Link
+                      href="/for-tradesmen"
+                      className="mt-3 inline-flex items-center gap-2 text-sm text-slate-300 hover:text-white"
+                    >
+                      <Image
+                        src="/yebo-logo.svg"
+                        alt="Yebo Invoices logo"
+                        width={24}
+                        height={24}
+                        unoptimized
+                        className="h-6 w-6"
+                      />
+                      <span>
+                        Powered by <strong className="font-semibold text-white">Yebo Invoices</strong> · official partner
+                      </span>
+                    </Link>
+                  </div>
+                </div>
               </div>
 
               <div className="flex flex-wrap gap-3 sm:gap-4 items-center text-sm sm:text-base">
