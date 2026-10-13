@@ -49,82 +49,123 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-50 to-slate-100 py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="flex items-center mb-4">
-                <div className="flex text-amber-400 mr-2">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-current" />
-                  ))}
+      {/* Hero: headline on the left, WhatsApp job card on the right */}
+      <section
+        id="whatsapp-job"
+        className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-12 text-white sm:py-16 lg:py-20 scroll-mt-20"
+      >
+        <div className="absolute inset-0 bg-black/20" aria-hidden="true"></div>
+        <div className="container relative mx-auto px-4">
+          <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-14">
+            {/* Left: message + clear contact number */}
+            <div className="space-y-7">
+              <div>
+                <div className="mb-4 flex items-center">
+                  <div className="mr-2 flex text-amber-400">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-5 w-5 fill-current" />
+                    ))}
+                  </div>
+                  <span className="font-medium text-slate-300">#1 Rated Carpenter Johannesburg</span>
                 </div>
-                <span className="text-slate-600 font-medium">#1 Rated Carpenter Johannesburg</span>
+
+                <h1 className="mb-5 text-4xl font-bold leading-tight lg:text-5xl">
+                  Get Your <span className="text-amber-400">Free Quote</span> on WhatsApp
+                </h1>
+
+                <p className="text-lg leading-relaxed text-slate-300 sm:text-xl">
+                  Door installation and granite cutting are the jobs our customers ask for most this year. Tell us what
+                  you need and we will send you a clear quote, with no waiting around for days.
+                </p>
               </div>
 
-              <h1 className="text-4xl lg:text-5xl font-bold text-slate-800 mb-6 leading-tight">
-                Get Your <span className="text-amber-600">Free Quote</span> Today
-              </h1>
-
-              <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-                Door installation and granite cutting are the jobs our customers ask for most this year. Tell us what
-                you need on WhatsApp and we will send you a clear quote, with no waiting around for days.
-              </p>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-slate-700">Free Quotes & Consultations</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-slate-700">5-Star Rated Service</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-slate-700">Licensed & Insured</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-slate-700">24-Month Warranty</span>
+              {/* Clear contact number */}
+              <div className="rounded-2xl bg-white/10 p-5 ring-1 ring-white/20 backdrop-blur-sm sm:p-6">
+                <p className="text-sm font-semibold uppercase tracking-wide text-amber-400">WhatsApp or call</p>
+                <a href="tel:+27676014490" className="mt-1 block text-4xl font-bold hover:text-amber-300 sm:text-5xl">
+                  067 601 4490
+                </a>
+                <p className="mt-2 text-sm text-slate-300">
+                  Mon to Fri 7:00 to 17:00, Sat 8:00 to 14:00. Emergency calls answered 24/7.
+                </p>
+                <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+                  <a
+                    href="https://wa.me/27676014490"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 rounded-lg bg-[#25D366] px-5 py-3 font-semibold text-white transition-colors hover:bg-[#1ebe5b]"
+                  >
+                    <WhatsAppIcon className="h-5 w-5" />
+                    Chat on WhatsApp
+                  </a>
+                  <a
+                    href="tel:+27676014490"
+                    className="flex items-center justify-center rounded-lg border border-white/40 px-5 py-3 font-semibold text-white transition-colors hover:bg-white hover:text-slate-900"
+                  >
+                    Call us
+                  </a>
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" asChild className="bg-amber-600 hover:bg-amber-700 text-lg px-8">
-                  <a href="tel:+27676014490">
-                    <Phone className="mr-2 w-5 h-5" />
-                    Call: 067 601 4490
-                  </a>
-                </Button>
-                <Button
-                  size="lg"
-                  asChild
-                  variant="outline"
-                  className="text-lg px-8 border-amber-600 text-amber-600 hover:bg-amber-50 bg-transparent"
-                >
-                  <a href="https://wa.me/27676014490" target="_blank" rel="noopener noreferrer">
-                    <WhatsAppIcon className="mr-2 w-5 h-5" />
-                    WhatsApp Quote
-                  </a>
-                </Button>
+              {/* Most requested services */}
+              <div>
+                <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-amber-400">
+                  Most requested this year
+                </p>
+                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                  <Link
+                    href="/door-installation"
+                    className="rounded-xl bg-white p-4 text-slate-800 transition-all hover:-translate-y-0.5 hover:shadow-lg"
+                  >
+                    <p className="font-bold">Door Installation</p>
+                    <p className="mt-1 text-sm text-slate-600">Interior, pivot, barn, security and French doors.</p>
+                  </Link>
+                  <Link
+                    href="/countertop-cutting-service-gauteng"
+                    className="rounded-xl bg-white p-4 text-slate-800 transition-all hover:-translate-y-0.5 hover:shadow-lg"
+                  >
+                    <p className="font-bold">Granite Cutting &amp; Installation</p>
+                    <p className="mt-1 text-sm text-slate-600">Sink and hob cut-outs, granite and quartz tops.</p>
+                  </Link>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 gap-3 text-sm sm:grid-cols-2">
+                {["Free quotes & consultations", "5-star rated service", "Licensed & insured", "24-month warranty"].map(
+                  (t) => (
+                    <div key={t} className="flex items-center space-x-2">
+                      <CheckCircle className="h-5 w-5 flex-shrink-0 text-green-400" />
+                      <span>{t}</span>
+                    </div>
+                  ),
+                )}
+              </div>
+
+              {/* Yebo Invoices note */}
+              <div className="flex items-start gap-3 rounded-xl bg-white/10 p-4 ring-1 ring-white/20">
+                <Image
+                  src="/yebo-logo.svg"
+                  alt="Yebo Invoices logo"
+                  width={40}
+                  height={40}
+                  unoptimized
+                  className="h-10 w-10 flex-shrink-0"
+                />
+                <div>
+                  <p className="font-semibold">Quotes sent fast with Yebo Invoices</p>
+                  <p className="mt-1 text-sm text-slate-300">
+                    We use Yebo Invoices to send clear quotes and invoices quickly, so you are not left waiting days.{" "}
+                    <Link href="/for-tradesmen" className="text-amber-300 underline underline-offset-2">
+                      Official partner
+                    </Link>
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="relative">
-              <Image
-                src="/granitecarpentry.webp"
-                alt="Contact Granite Carpentry - Professional carpenter in Johannesburg for kitchen renovations"
-                width={600}
-                height={500}
-                className="rounded-lg shadow-2xl"
-                priority
-              />
-              <div className="absolute -bottom-4 -left-4 bg-white p-4 rounded-lg shadow-lg">
-                <div className="text-2xl font-bold text-slate-800">47+</div>
-                <div className="text-slate-600">Happy Customers</div>
-              </div>
+            {/* Right: the WhatsApp job card */}
+            <div className="lg:sticky lg:top-24">
+              <WhatsAppJobCard />
             </div>
           </div>
         </div>
@@ -204,101 +245,6 @@ export default function ContactPage() {
                 <p className="text-xs text-slate-500 mt-2">Free consultations available</p>
               </CardContent>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* WhatsApp Job Form */}
-      <section id="whatsapp-job" className="py-16 bg-slate-50 scroll-mt-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Send Us Your Job on WhatsApp</h2>
-              <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-                Three quick taps and your message is ready. No forms to wait on, no emails lost in a spam folder.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
-              <div className="lg:col-span-3">
-                <WhatsAppJobCard />
-              </div>
-
-              <aside className="lg:col-span-2 space-y-6">
-                {/* Clear contact number */}
-                <div className="rounded-2xl bg-slate-900 p-6 text-white shadow-lg">
-                  <p className="text-sm font-semibold uppercase tracking-wide text-amber-400">WhatsApp or call</p>
-                  <a
-                    href="tel:+27676014490"
-                    className="mt-1 block text-3xl font-bold hover:text-amber-300 sm:text-4xl"
-                  >
-                    067 601 4490
-                  </a>
-                  <p className="mt-2 text-sm text-slate-300">Mon to Fri 7:00 to 17:00, Sat 8:00 to 14:00</p>
-                  <p className="text-sm text-slate-300">Emergency calls answered 24/7</p>
-                  <a
-                    href="https://wa.me/27676014490"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-4 flex items-center justify-center gap-2 rounded-lg bg-[#25D366] px-4 py-3 font-semibold text-white transition-colors hover:bg-[#1ebe5b]"
-                  >
-                    <WhatsAppIcon className="h-5 w-5" />
-                    Chat on WhatsApp
-                  </a>
-                </div>
-
-                {/* Most requested services */}
-                <div className="rounded-2xl border-2 border-amber-200 bg-white p-6 shadow-sm">
-                  <p className="text-sm font-semibold uppercase tracking-wide text-amber-700">
-                    Most requested this year
-                  </p>
-                  <div className="mt-4 space-y-4">
-                    <Link
-                      href="/door-installation"
-                      className="block rounded-lg border border-slate-200 p-4 transition-all hover:-translate-y-0.5 hover:border-amber-300 hover:shadow-md"
-                    >
-                      <p className="font-bold text-slate-800">Door Installation</p>
-                      <p className="mt-1 text-sm text-slate-600">
-                        Interior, pivot, barn, security and French doors, hung and finished properly.
-                      </p>
-                    </Link>
-                    <Link
-                      href="/countertop-cutting-service-gauteng"
-                      className="block rounded-lg border border-slate-200 p-4 transition-all hover:-translate-y-0.5 hover:border-amber-300 hover:shadow-md"
-                    >
-                      <p className="font-bold text-slate-800">Granite Cutting &amp; Installation</p>
-                      <p className="mt-1 text-sm text-slate-600">
-                        Precise cut-outs for sinks and hobs, and clean installation of granite and quartz tops.
-                      </p>
-                    </Link>
-                  </div>
-                </div>
-
-                {/* Yebo Invoices note */}
-                <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-                  <div className="flex items-start gap-3">
-                    <Image
-                      src="/yebo-logo.svg"
-                      alt="Yebo Invoices logo"
-                      width={40}
-                      height={40}
-                      unoptimized
-                      className="h-10 w-10 flex-shrink-0"
-                    />
-                    <div>
-                      <p className="font-semibold text-slate-800">Quotes sent fast with Yebo Invoices</p>
-                      <p className="mt-1 text-sm text-slate-600">
-                        We use Yebo Invoices to send clear quotes and invoices quickly, so you are not left waiting
-                        days.{" "}
-                        <Link href="/for-tradesmen" className="text-amber-700 underline underline-offset-2">
-                          Official partner
-                        </Link>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </aside>
-            </div>
           </div>
         </div>
       </section>
