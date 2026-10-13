@@ -3,11 +3,8 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Checkbox } from "@/components/ui/checkbox"
+import { WhatsAppIcon } from "@/components/whatsapp-icon"
+import { WhatsAppJobCard } from "@/components/whatsapp-job-card"
 import {
   Phone,
   Mail,
@@ -16,7 +13,6 @@ import {
   Star,
   CheckCircle,
   ArrowRight,
-  MessageSquare,
   Calendar,
   Shield,
   Award,
@@ -27,7 +23,7 @@ import {
 export const metadata: Metadata = {
   title: "Contact Johannesburg's #1 Carpenter | Free Quotes Kitchen Renovations 2026",
   description:
-    "Contact Granite Carpentry for free quotes on kitchen renovations, built-in cupboards & granite installation. Call 067 601 4490 or email info@granitecarpentry.co.za. 5-star rated carpenter serving Johannesburg, Sandton, Randburg.",
+    "Contact Granite Carpentry for door installation, granite cutting & installation, kitchen renovations and built-in cupboards. Send your job on WhatsApp or call 067 601 4490. 5-star rated carpenter serving Johannesburg, Sandton, Randburg.",
   keywords:
     "contact carpenter Johannesburg, free kitchen renovation quote, granite installation quote Johannesburg, built-in cupboards quote, carpenter contact details Johannesburg, kitchen renovation consultation, professional carpenter contact",
   robots: "index, follow",
@@ -72,8 +68,8 @@ export default function ContactPage() {
               </h1>
 
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-                Ready to transform your space? Contact Johannesburg's most trusted carpenter for kitchen renovations,
-                built-in cupboards, and granite installations. Free consultations and competitive quotes guaranteed.
+                Door installation and granite cutting are the jobs our customers ask for most this year. Tell us what
+                you need on WhatsApp and we will send you a clear quote, with no waiting around for days.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
@@ -109,7 +105,7 @@ export default function ContactPage() {
                   className="text-lg px-8 border-amber-600 text-amber-600 hover:bg-amber-50 bg-transparent"
                 >
                   <a href="https://wa.me/27676014490" target="_blank" rel="noopener noreferrer">
-                    <MessageSquare className="mr-2 w-5 h-5" />
+                    <WhatsAppIcon className="mr-2 w-5 h-5" />
                     WhatsApp Quote
                   </a>
                 </Button>
@@ -160,7 +156,7 @@ export default function ContactPage() {
             <Card className="text-center hover:shadow-lg transition-shadow border-2 hover:border-amber-200">
               <CardContent className="p-6">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MessageSquare className="w-8 h-8 text-green-600" />
+                  <WhatsAppIcon className="w-8 h-8 text-[#25D366]" />
                 </div>
                 <h3 className="text-xl font-bold text-slate-800 mb-2">WhatsApp</h3>
                 <p className="text-slate-600 mb-4">Quick quotes & photos</p>
@@ -212,186 +208,97 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Form */}
-      <section className="py-16 bg-slate-50">
+      {/* WhatsApp Job Form */}
+      <section id="whatsapp-job" className="py-16 bg-slate-50 scroll-mt-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Get Your Free Quote</h2>
-              <p className="text-xl text-slate-600">
-                Tell us about your project and we'll provide a detailed quote within 24 hours
+              <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Send Us Your Job on WhatsApp</h2>
+              <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+                Three quick taps and your message is ready. No forms to wait on, no emails lost in a spam folder.
               </p>
             </div>
 
-            <Card className="shadow-xl">
-              <CardHeader className="bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-t-lg">
-                <CardTitle className="text-2xl text-center">Free Project Quote Form</CardTitle>
-              </CardHeader>
-              <CardContent className="p-8">
-                <form className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <Label htmlFor="name" className="text-slate-700 font-medium">
-                        Full Name *
-                      </Label>
-                      <Input id="name" name="name" required className="mt-1" placeholder="Enter your full name" />
-                    </div>
-                    <div>
-                      <Label htmlFor="phone" className="text-slate-700 font-medium">
-                        Phone Number *
-                      </Label>
-                      <Input id="phone" name="phone" type="tel" required className="mt-1" placeholder="067 123 4567" />
-                    </div>
-                  </div>
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+              <div className="lg:col-span-3">
+                <WhatsAppJobCard />
+              </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <Label htmlFor="email" className="text-slate-700 font-medium">
-                        Email Address *
-                      </Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        required
-                        className="mt-1"
-                        placeholder="your.email@example.com"
-                      />
-                    </div>
-                    <div>
-                      <Label htmlFor="location" className="text-slate-700 font-medium">
-                        Location/Area *
-                      </Label>
-                      <Select name="location">
-                        <SelectTrigger className="mt-1">
-                          <SelectValue placeholder="Select your area" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="johannesburg-south">Johannesburg South</SelectItem>
-                          <SelectItem value="sandton">Sandton & Rosebank</SelectItem>
-                          <SelectItem value="randburg">Randburg & Fourways</SelectItem>
-                          <SelectItem value="kempton-park">Kempton Park & Boksburg</SelectItem>
-                          <SelectItem value="pretoria">Pretoria & Centurion</SelectItem>
-                          <SelectItem value="midrand">Midrand & Edenvale</SelectItem>
-                          <SelectItem value="roodepoort">Roodepoort & Krugersdorp</SelectItem>
-                          <SelectItem value="other">Other (specify in message)</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                  </div>
+              <aside className="lg:col-span-2 space-y-6">
+                {/* Clear contact number */}
+                <div className="rounded-2xl bg-slate-900 p-6 text-white shadow-lg">
+                  <p className="text-sm font-semibold uppercase tracking-wide text-amber-400">WhatsApp or call</p>
+                  <a
+                    href="tel:+27676014490"
+                    className="mt-1 block text-3xl font-bold hover:text-amber-300 sm:text-4xl"
+                  >
+                    067 601 4490
+                  </a>
+                  <p className="mt-2 text-sm text-slate-300">Mon to Fri 7:00 to 17:00, Sat 8:00 to 14:00</p>
+                  <p className="text-sm text-slate-300">Emergency calls answered 24/7</p>
+                  <a
+                    href="https://wa.me/27676014490"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 flex items-center justify-center gap-2 rounded-lg bg-[#25D366] px-4 py-3 font-semibold text-white transition-colors hover:bg-[#1ebe5b]"
+                  >
+                    <WhatsAppIcon className="h-5 w-5" />
+                    Chat on WhatsApp
+                  </a>
+                </div>
 
-                  <div>
-                    <Label htmlFor="service" className="text-slate-700 font-medium">
-                      Service Required *
-                    </Label>
-                    <Select name="service">
-                      <SelectTrigger className="mt-1">
-                        <SelectValue placeholder="Select service type" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="kitchen-renovation">Kitchen Renovation</SelectItem>
-                        <SelectItem value="built-in-cupboards">Built-in Cupboards</SelectItem>
-                        <SelectItem value="granite-installation">Granite/Quartz Installation</SelectItem>
-                        <SelectItem value="decking-flooring">Decking & Flooring</SelectItem>
-                        <SelectItem value="drywall-ceilings">Drywall & Ceilings</SelectItem>
-                        <SelectItem value="multiple-services">Multiple Services</SelectItem>
-                        <SelectItem value="consultation">General Consultation</SelectItem>
-                      </SelectContent>
-                    </Select>
+                {/* Most requested services */}
+                <div className="rounded-2xl border-2 border-amber-200 bg-white p-6 shadow-sm">
+                  <p className="text-sm font-semibold uppercase tracking-wide text-amber-700">
+                    Most requested this year
+                  </p>
+                  <div className="mt-4 space-y-4">
+                    <Link
+                      href="/door-installation"
+                      className="block rounded-lg border border-slate-200 p-4 transition-all hover:-translate-y-0.5 hover:border-amber-300 hover:shadow-md"
+                    >
+                      <p className="font-bold text-slate-800">Door Installation</p>
+                      <p className="mt-1 text-sm text-slate-600">
+                        Interior, pivot, barn, security and French doors, hung and finished properly.
+                      </p>
+                    </Link>
+                    <Link
+                      href="/countertop-cutting-service-gauteng"
+                      className="block rounded-lg border border-slate-200 p-4 transition-all hover:-translate-y-0.5 hover:border-amber-300 hover:shadow-md"
+                    >
+                      <p className="font-bold text-slate-800">Granite Cutting &amp; Installation</p>
+                      <p className="mt-1 text-sm text-slate-600">
+                        Precise cut-outs for sinks and hobs, and clean installation of granite and quartz tops.
+                      </p>
+                    </Link>
                   </div>
+                </div>
 
-                  <div>
-                    <Label htmlFor="budget" className="text-slate-700 font-medium">
-                      Estimated Budget Range
-                    </Label>
-                    <Select name="budget">
-                      <SelectTrigger className="mt-1">
-                        <SelectValue placeholder="Select budget range (optional)" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="under-20k">Under R20,000</SelectItem>
-                        <SelectItem value="20k-50k">R20,000 - R50,000</SelectItem>
-                        <SelectItem value="50k-100k">R50,000 - R100,000</SelectItem>
-                        <SelectItem value="100k-200k">R100,000 - R200,000</SelectItem>
-                        <SelectItem value="over-200k">Over R200,000</SelectItem>
-                        <SelectItem value="discuss">Prefer to discuss</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-
-                  <div>
-                    <Label htmlFor="timeline" className="text-slate-700 font-medium">
-                      Project Timeline
-                    </Label>
-                    <Select name="timeline">
-                      <SelectTrigger className="mt-1">
-                        <SelectValue placeholder="When do you want to start?" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="asap">As soon as possible</SelectItem>
-                        <SelectItem value="1-month">Within 1 month</SelectItem>
-                        <SelectItem value="2-3-months">2-3 months</SelectItem>
-                        <SelectItem value="3-6-months">3-6 months</SelectItem>
-                        <SelectItem value="planning">Just planning/getting quotes</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-
-                  <div>
-                    <Label htmlFor="message" className="text-slate-700 font-medium">
-                      Project Details *
-                    </Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      required
-                      rows={5}
-                      className="mt-1"
-                      placeholder="Please describe your project in detail. Include dimensions, materials preferences, specific requirements, and any other relevant information..."
+                {/* Yebo Invoices note */}
+                <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
+                  <div className="flex items-start gap-3">
+                    <Image
+                      src="/yebo-logo.svg"
+                      alt="Yebo Invoices logo"
+                      width={40}
+                      height={40}
+                      unoptimized
+                      className="h-10 w-10 flex-shrink-0"
                     />
-                  </div>
-
-                  <div className="space-y-3">
-                    <div className="flex items-center space-x-2">
-                      <Checkbox id="consultation" name="consultation" />
-                      <Label htmlFor="consultation" className="text-sm text-slate-700">
-                        I would like to schedule a free on-site consultation
-                      </Label>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Checkbox id="updates" name="updates" />
-                      <Label htmlFor="updates" className="text-sm text-slate-700">
-                        Send me updates about new services and special offers
-                      </Label>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Checkbox id="privacy" name="privacy" required />
-                      <Label htmlFor="privacy" className="text-sm text-slate-700">
-                        I agree to the{" "}
-                        <Link href="/privacy" className="text-amber-600 hover:underline">
-                          Privacy Policy
-                        </Link>{" "}
-                        and{" "}
-                        <Link href="/terms" className="text-amber-600 hover:underline">
-                          Terms of Service
-                        </Link>{" "}
-                        *
-                      </Label>
+                    <div>
+                      <p className="font-semibold text-slate-800">Quotes sent fast with Yebo Invoices</p>
+                      <p className="mt-1 text-sm text-slate-600">
+                        We use Yebo Invoices to send clear quotes and invoices quickly, so you are not left waiting
+                        days.{" "}
+                        <Link href="/for-tradesmen" className="text-amber-700 underline underline-offset-2">
+                          Official partner
+                        </Link>
+                      </p>
                     </div>
                   </div>
-
-                  <div className="text-center">
-                    <Button type="submit" size="lg" className="bg-amber-600 hover:bg-amber-700 text-lg px-12 py-4">
-                      Get My Free Quote
-                      <ArrowRight className="ml-2 w-5 h-5" />
-                    </Button>
-                    <p className="text-sm text-slate-600 mt-3">
-                      We'll respond within 24 hours with your detailed quote
-                    </p>
-                  </div>
-                </form>
-              </CardContent>
-            </Card>
+                </div>
+              </aside>
+            </div>
           </div>
         </div>
       </section>
