@@ -4,7 +4,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://granitecarpentry.co.za"
 
   // Static pages
-  const staticPages = ["", "/about", "/contact", "/portfolio", "/blog", "/faq", "/privacy", "/terms"]
+  const staticPages = ["", "/about", "/contact", "/portfolio", "/blog", "/faq", "/privacy", "/terms", "/for-tradesmen"]
 
   const servicePages = [
     "/kitchen-renovations",
@@ -127,7 +127,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Blog pages
   const blogPages = [
-    
+    "/blog/how-to-write-a-carpentry-quote-south-africa",
+    "/blog/how-to-get-paid-faster-as-a-tradesman-south-africa",
   ]
 
   const allPages = [...staticPages, ...servicePages, ...doorPages, ...drywallLocationPages, ...areaPages, ...carpenterPages,...blogPages]

@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Calendar, Clock, User, ArrowRight, Search } from "lucide-react"
+import { Calendar, Clock, User, ArrowRight, Search, Hammer } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "★★★★★ Professional Carpentry Blog | Expert Tips & Guides 2026",
@@ -1156,6 +1156,43 @@ export default function BlogPage() {
                   </CardContent>
                 </Card>
               ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Guides for tradespeople (sponsored by Yebo Invoices) */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto rounded-2xl border border-amber-200 bg-amber-50 p-8">
+            <div className="flex items-center gap-3 mb-3">
+              <Hammer className="h-6 w-6 text-amber-600" />
+              <h2 className="text-2xl font-bold text-slate-900">For tradespeople: quote faster, get paid sooner</h2>
+            </div>
+            <p className="text-slate-700 mb-6">
+              Practical guides from a working carpentry company, plus a free quote template. Sponsored by Yebo Invoices.
+            </p>
+            <div className="grid gap-4 md:grid-cols-3">
+              <Link
+                href="/blog/how-to-write-a-carpentry-quote-south-africa"
+                className="rounded-lg bg-white p-4 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <p className="font-semibold text-slate-900 mb-1">How to write a carpentry quote in South Africa</p>
+                <p className="text-sm text-slate-600">What to include, with a worked example and free template.</p>
+              </Link>
+              <Link
+                href="/blog/how-to-get-paid-faster-as-a-tradesman-south-africa"
+                className="rounded-lg bg-white p-4 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <p className="font-semibold text-slate-900 mb-1">How to get paid faster as a tradesman</p>
+                <p className="text-sm text-slate-600">Deposits, same-day invoices and reminders that work.</p>
+              </Link>
+              <Link href="/for-tradesmen" className="rounded-lg bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+                <p className="font-semibold text-slate-900 mb-1">How we quote and invoice</p>
+                <p className="text-sm text-slate-600">
+                  See the tool we use. <ArrowRight className="inline h-4 w-4" />
+                </p>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

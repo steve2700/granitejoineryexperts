@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Yebo Invoices</title>
+  <desc id="desc">A geometric Y mark with a lime accent on an orange background</desc>
+  <rect width="512" height="512" rx="144" fill="#f26b38"/>
+  <path d="M135 142 256 278l121-136M256 278v112" fill="none" stroke="#fffaf2" stroke-linecap="round" stroke-linejoin="round" stroke-width="44"/>
+  <circle cx="376" cy="142" r="38" fill="#d9f36a"/>
+</svg>

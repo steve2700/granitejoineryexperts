@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import { YEBO_DISCLOSURE, yeboLink } from "@/lib/yebo"
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin, Star, Award, Shield, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -72,6 +73,7 @@ export function Footer() {
     { name: "Portfolio", href: "/portfolio" },
     { name: "Blog", href: "/blog" },
     { name: "FAQ", href: "/faq" },
+    { name: "For Tradesmen", href: "/for-tradesmen" },
     { name: "Contact", href: "/contact" },
     { name: "Privacy Policy", href: "/privacy" },
   ]
@@ -325,6 +327,23 @@ export function Footer() {
       </div>
 
       <Separator className="bg-slate-800" />
+
+      {/* Sponsor / partner line */}
+      <div className="container mx-auto px-4 pt-6">
+        <a
+          href={yeboLink("footer")}
+          target="_blank"
+          rel="noopener sponsored"
+          className="mx-auto flex w-fit items-center gap-3 rounded-lg border border-slate-700 px-4 py-2 text-sm text-slate-300 transition-colors hover:border-[#f26b38] hover:text-white"
+          title={YEBO_DISCLOSURE}
+        >
+          <Image src="/yebo-logo.svg" alt="Yebo Invoices logo" width={28} height={28} unoptimized className="h-7 w-7" />
+          <span>
+            Quotes &amp; invoices powered by <strong className="font-semibold text-white">Yebo Invoices</strong>
+            <span className="text-slate-400"> · official partner &amp; sponsor</span>
+          </span>
+        </a>
+      </div>
 
       {/* Bottom Footer */}
       <div className="container mx-auto px-4 py-6">
