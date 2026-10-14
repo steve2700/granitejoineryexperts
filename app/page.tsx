@@ -216,77 +216,58 @@ export default function HomePage() {
     },
   ]
 
+  const yeboCallout = (
+    <div className="rounded-xl border border-amber-500/40 bg-white/10 p-3 backdrop-blur-sm sm:p-4">
+      <div className="flex items-start gap-3">
+        <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-amber-600">
+          <Zap className="h-5 w-5 text-white" aria-hidden="true" />
+        </div>
+        <div className="min-w-0">
+          <p className="text-base font-bold text-white sm:text-lg">Instant quotes. No more waiting days.</p>
+          <p className="mt-0.5 text-sm leading-snug text-slate-200">
+            We use Yebo Invoices to send quotes fast, straight to your WhatsApp or email.
+          </p>
+          <Link
+            href="/for-tradesmen"
+            className="mt-2 inline-flex items-center gap-2 text-xs text-slate-300 hover:text-white sm:text-sm"
+          >
+            <Image src="/yebo-logo.svg" alt="Yebo Invoices logo" width={20} height={20} unoptimized className="h-5 w-5" />
+            <span>
+              Powered by <strong className="font-semibold text-white">Yebo Invoices</strong> · official partner
+            </span>
+          </Link>
+        </div>
+      </div>
+    </div>
+  )
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative container mx-auto px-4 py-16 sm:py-20 lg:py-32">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div className="space-y-6 lg:space-y-8">
+        <div className="relative container mx-auto px-4 py-10 sm:py-14 lg:py-16">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+            {/* Left: message, buttons, trust */}
+            <div className="space-y-5 lg:space-y-6">
               <div className="space-y-4">
                 <Badge className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2">
                   Johannesburg's #1 Rated Carpenter, Plumber & Granite Installer 2025
                 </Badge>
-                <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
                   Expert Carpentry, Plumbing &{" "}
                   <span className="text-amber-400 block sm:inline">Granite Installation</span>{" "}
                   <span className="block">Services Johannesburg</span>
                 </h1>
-                <p className="text-lg sm:text-xl text-slate-300 leading-relaxed">
-                  Transform your property with Johannesburg's most trusted home improvement specialists. From luxury
-                  kitchen renovations and custom built-in cupboards to 24/7 emergency plumbing and premium granite
-                  installations - we deliver exceptional craftsmanship backed by 5-star reviews and a 24-month warranty
-                  guarantee across all Gauteng areas.
+                <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
+                  Johannesburg's most trusted home improvement specialists. Door installation, granite cutting, kitchen
+                  renovations, built-in cupboards and 24/7 emergency plumbing, backed by 5-star reviews and a 24-month
+                  warranty across Gauteng.
                 </p>
               </div>
 
-              {/* Instant quotes: powered by Yebo Invoices */}
-              <div className="rounded-xl border border-amber-500/40 bg-white/10 p-4 backdrop-blur-sm sm:p-5">
-                <div className="flex items-start gap-4">
-                  <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-amber-600">
-                    <Zap className="h-6 w-6 text-white" aria-hidden="true" />
-                  </div>
-                  <div className="min-w-0">
-                    <p className="text-lg font-bold text-white sm:text-xl">Instant quotes. No more waiting days.</p>
-                    <p className="mt-1 text-sm leading-relaxed text-slate-200 sm:text-base">
-                      We use Yebo Invoices to prepare and send quotes fast, straight to your WhatsApp or email, so you
-                      can compare prices and decide while your project is still fresh in your mind.
-                    </p>
-                    <Link
-                      href="/for-tradesmen"
-                      className="mt-3 inline-flex items-center gap-2 text-sm text-slate-300 hover:text-white"
-                    >
-                      <Image
-                        src="/yebo-logo.svg"
-                        alt="Yebo Invoices logo"
-                        width={24}
-                        height={24}
-                        unoptimized
-                        className="h-6 w-6"
-                      />
-                      <span>
-                        Powered by <strong className="font-semibold text-white">Yebo Invoices</strong> · official partner
-                      </span>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-wrap gap-3 sm:gap-4 items-center text-sm sm:text-base">
-                <div className="flex items-center space-x-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 sm:h-5 sm:w-5 text-amber-400 fill-current" />
-                  ))}
-                  <span className="ml-2 font-semibold">5.0 Google Rating</span>
-                </div>
-                <Separator orientation="vertical" className="h-6 bg-slate-600 hidden sm:block" />
-                <span className="font-semibold">50+ Projects (2025-2026)</span>
-                <Separator orientation="vertical" className="h-6 bg-slate-600 hidden sm:block" />
-                <span className="font-semibold">24/7 Emergency Response</span>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-4">
+              {/* Buttons first, so they show without scrolling */}
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <Button
                   asChild
                   size="lg"
@@ -307,34 +288,47 @@ export default function HomePage() {
                 </Button>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-green-400 flex-shrink-0" />
-                  <span>Licensed & Fully Insured</span>
+              {/* Instant quotes (mobile: here; desktop: under the image) */}
+              <div className="lg:hidden">{yeboCallout}</div>
+
+              {/* Rating + proof, then checks in one tidy block */}
+              <div className="flex flex-wrap gap-x-4 gap-y-2 items-center text-sm sm:text-base">
+                <div className="flex items-center space-x-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 sm:h-5 sm:w-5 text-amber-400 fill-current" />
+                  ))}
+                  <span className="ml-2 font-semibold">5.0 Google Rating</span>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-green-400 flex-shrink-0" />
-                  <span>Free In-Home Consultations</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-green-400 flex-shrink-0" />
-                  <span>Instant WhatsApp Quotes</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-green-400 flex-shrink-0" />
-                  <span>24-Month Workmanship Warranty</span>
-                </div>
+                <Separator orientation="vertical" className="h-6 bg-slate-600 hidden sm:block" />
+                <span className="font-semibold">50+ Projects (2025-2026)</span>
+                <Separator orientation="vertical" className="h-6 bg-slate-600 hidden sm:block" />
+                <span className="font-semibold">24/7 Emergency Response</span>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 text-sm">
+                {[
+                  "Licensed & Fully Insured",
+                  "Free In-Home Consultations",
+                  "Instant WhatsApp Quotes",
+                  "24-Month Workmanship Warranty",
+                ].map((t) => (
+                  <div key={t} className="flex items-center space-x-2">
+                    <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-green-400 flex-shrink-0" />
+                    <span>{t}</span>
+                  </div>
+                ))}
               </div>
             </div>
 
-            <div className="relative mt-8 lg:mt-0">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            {/* Right: image starts at the top and fills the height; Yebo note sits underneath on desktop */}
+            <div className="flex flex-col gap-4">
+              <div className="relative min-h-[260px] sm:min-h-[340px] lg:min-h-[360px] flex-1 rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="/granitecarpentry.webp"
                   alt="Professional Carpenter, Plumber & Granite Installation Johannesburg"
-                  width={600}
-                  height={400}
-                  className="w-full h-auto"
+                  fill
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                  className="object-cover"
                   priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
@@ -350,6 +344,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </div>
+              <div className="hidden lg:block">{yeboCallout}</div>
             </div>
           </div>
         </div>
