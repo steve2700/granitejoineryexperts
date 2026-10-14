@@ -1,10 +1,11 @@
+import { WhatsAppIcon } from "@/components/whatsapp-icon"
 import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { CheckCircle, ArrowRight, Phone, Star, Award, Building2, MapPin, Clock, Shield, Users, MessageCircle } from "lucide-react"
+import { CheckCircle, ArrowRight, Phone, Star, Award, Building2, MapPin, Clock, Shield, Users } from "lucide-react"
 
 export const metadata: Metadata = {
   title:
@@ -647,7 +648,7 @@ export default function PretoriaPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center text-xl">
-                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                   How much does a kitchen renovation cost in Pretoria?
                 </CardTitle>
               </CardHeader>
@@ -661,7 +662,7 @@ export default function PretoriaPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center text-xl">
-                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                   Do you offer same-day carpentry quotes in Pretoria and Centurion?
                 </CardTitle>
               </CardHeader>
@@ -675,7 +676,7 @@ export default function PretoriaPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center text-xl">
-                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                   What areas of Pretoria and Tshwane do you serve?
                 </CardTitle>
               </CardHeader>
@@ -689,7 +690,7 @@ export default function PretoriaPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center text-xl">
-                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                   Are you licensed and insured in Pretoria?
                 </CardTitle>
               </CardHeader>
@@ -703,7 +704,7 @@ export default function PretoriaPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center text-xl">
-                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                   How long does a typical kitchen renovation take in Pretoria?
                 </CardTitle>
               </CardHeader>
@@ -717,7 +718,7 @@ export default function PretoriaPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center text-xl">
-                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                   Do you offer emergency plumbing services in Pretoria?
                 </CardTitle>
               </CardHeader>
@@ -731,7 +732,7 @@ export default function PretoriaPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center text-xl">
-                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                   What types of built-in cupboards do you install in Pretoria?
                 </CardTitle>
               </CardHeader>

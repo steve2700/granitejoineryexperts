@@ -1,21 +1,11 @@
+import { WhatsAppIcon } from "@/components/whatsapp-icon"
 import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import {
-  CheckCircle,
-  ArrowRight,
-  Phone,
-  Star,
-  MapPin,
-  Clock,
-  Shield,
-  Wrench,
-  Home,
-  MessageCircle,
-} from "lucide-react"
+import { CheckCircle, ArrowRight, Phone, Star, MapPin, Clock, Shield, Wrench, Home } from "lucide-react"
 
 const CITY = "Centurion"
 const SLUG = "centurion"
@@ -404,7 +394,7 @@ export default function DoorFittersCityPage() {
               <Card key={f.q}>
                 <CardHeader>
                   <CardTitle className="flex items-center text-lg">
-                    <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                    <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                     {f.q}
                   </CardTitle>
                 </CardHeader>

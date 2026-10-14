@@ -1,9 +1,10 @@
+import { WhatsAppIcon } from "@/components/whatsapp-icon"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { CheckCircle, ArrowRight, Phone, Star, MapPin, Award, Users, Clock, Shield, Gem, Building2, MessageCircle, Home } from 'lucide-react'
+import { CheckCircle, ArrowRight, Phone, Star, MapPin, Award, Users, Clock, Shield, Gem, Building2, Home } from "lucide-react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -605,7 +606,7 @@ export default function BedfordviewPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center text-xl">
-                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                   What areas in Bedfordview do you service?
                 </CardTitle>
               </CardHeader>
@@ -619,7 +620,7 @@ export default function BedfordviewPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center text-xl">
-                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                   How long does a kitchen renovation take in Bedfordview?
                 </CardTitle>
               </CardHeader>
@@ -633,7 +634,7 @@ export default function BedfordviewPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center text-xl">
-                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                   Do you offer emergency plumbing in Bedfordview?
                 </CardTitle>
               </CardHeader>
@@ -647,7 +648,7 @@ export default function BedfordviewPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center text-xl">
-                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                   What premium materials do you use for countertops?
                 </CardTitle>
               </CardHeader>
@@ -661,7 +662,7 @@ export default function BedfordviewPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center text-xl">
-                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                   Is your work in Bedfordview guaranteed?
                 </CardTitle>
               </CardHeader>
@@ -675,7 +676,7 @@ export default function BedfordviewPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center text-xl">
-                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                   How much do built-in cupboards cost in Bedfordview?
                 </CardTitle>
               </CardHeader>
@@ -689,7 +690,7 @@ export default function BedfordviewPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center text-xl">
-                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                   Do you handle both new installations and repairs?
                 </CardTitle>
               </CardHeader>

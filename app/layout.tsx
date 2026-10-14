@@ -6,7 +6,6 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { GoogleBusinessSchema } from "@/components/google-business-schema"
 import { FloatingWhatsApp } from "@/components/floating-whatsapp"
-import { AIChatWidget } from "@/components/ai-chat-widget"
 import { AnalyticsProvider } from "@/components/analytics-provider"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
@@ -327,7 +326,6 @@ export default function RootLayout({
                 <Footer />
               </div>
               <FloatingWhatsApp />
-              <AIChatWidget />
               <GoogleBusinessSchema
                 businessName="Granite Carpentry"
                 description="Professional carpenter and granite installation specialists in Johannesburg. Kitchen renovations, built-in cupboards, and stone installations with 5-star service."

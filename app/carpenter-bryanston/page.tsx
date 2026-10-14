@@ -1,10 +1,11 @@
+import { WhatsAppIcon } from "@/components/whatsapp-icon"
 import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { CheckCircle, ArrowRight, Phone, Star, Award, Building2, MapPin, Clock, Shield, Users, MessageCircle, Home } from "lucide-react"
+import { CheckCircle, ArrowRight, Phone, Star, Award, Building2, MapPin, Clock, Shield, Users, Home } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Carpenter Bryanston 2026 | Kitchen Renovations & Built-in Cupboards | Same Day Quotes",
@@ -553,7 +554,7 @@ export default function CarpenterBryanstonPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center text-lg">
-                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                   How much does a kitchen renovation cost in Bryanston?
                 </CardTitle>
               </CardHeader>
@@ -567,7 +568,7 @@ export default function CarpenterBryanstonPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center text-lg">
-                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                   Do you work with Bryanston body corporates and building management?
                 </CardTitle>
               </CardHeader>
@@ -581,7 +582,7 @@ export default function CarpenterBryanstonPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center text-lg">
-                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                   How long does a kitchen renovation take in a Bryanston apartment?
                 </CardTitle>
               </CardHeader>
@@ -595,7 +596,7 @@ export default function CarpenterBryanstonPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center text-lg">
-                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                   Do you offer same-day quotes in Bryanston?
                 </CardTitle>
               </CardHeader>
@@ -609,7 +610,7 @@ export default function CarpenterBryanstonPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center text-lg">
-                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                   What areas near Bryanston do you also serve?
                 </CardTitle>
               </CardHeader>
@@ -623,7 +624,7 @@ export default function CarpenterBryanstonPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center text-lg">
-                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                   Can you install granite countertops in Bryanston apartments?
                 </CardTitle>
               </CardHeader>
@@ -637,7 +638,7 @@ export default function CarpenterBryanstonPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center text-lg">
-                  <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                  <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                   Do you offer emergency plumbing services in Bryanston?
                 </CardTitle>
               </CardHeader>

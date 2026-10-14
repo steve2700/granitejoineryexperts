@@ -1,28 +1,11 @@
+import { WhatsAppIcon } from "@/components/whatsapp-icon"
 import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import {
-  CheckCircle,
-  ArrowRight,
-  Phone,
-  Star,
-  Award,
-  Building2,
-  MapPin,
-  Clock,
-  Shield,
-  Users,
-  MessageCircle,
-  Home,
-  Hammer,
-  Wrench,
-  DoorOpen,
-  ClipboardList,
-  BadgeCheck,
-} from "lucide-react"
+import { CheckCircle, ArrowRight, Phone, Star, Award, Building2, MapPin, Clock, Shield, Users, Home, Hammer, Wrench, DoorOpen, ClipboardList, BadgeCheck } from "lucide-react"
 
 const CITY = "Johannesburg"
 const REGION = "Gauteng"
@@ -684,7 +667,7 @@ export default function DoorHangingCityPage() {
               <Card key={item.q}>
                 <CardHeader>
                   <CardTitle className="flex items-center text-lg">
-                    <MessageCircle className="w-5 h-5 text-amber-600 mr-2" />
+                    <WhatsAppIcon className="w-5 h-5 text-amber-600 mr-2" />
                     {item.q}
                   </CardTitle>
                 </CardHeader>
